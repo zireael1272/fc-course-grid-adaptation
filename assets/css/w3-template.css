@@ -36,3 +36,28 @@ body {
 .accent-header {
   font-weight: bold;
 }
+
+.hero-section {
+  margin-top: 52px;
+  background-color: #fff;
+  background-image: url("/assets/images/architect.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f1f1f1;
+  font-size: 36px;
+  letter-spacing: 4px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.accent-hero {
+  background-color: #000;
+  opacity: 0.75;
+  padding: 8px 16px;
+  font-weight: 700;
+}
