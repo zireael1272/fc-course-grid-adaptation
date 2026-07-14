@@ -32,6 +32,17 @@ body {
   padding: 60px 165px;
 }
 
+.btn {
+  border: none;
+  border-radius: 4px;
+  line-height: 1;
+  background-color: #ece5ff;
+  color: var(--main-color);
+  padding: 16px 24px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -85,17 +96,6 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
-}
-
-.register-btn {
-  border: none;
-  border-radius: 4px;
-  line-height: 1;
-  background-color: #ece5ff;
-  color: var(--main-color);
-  padding: 16px 24px;
-  cursor: pointer;
-  transition: 0.3s;
 }
 
 .register-btn:hover {
@@ -167,8 +167,6 @@ body {
   color: #fff;
   border: 1px solid var(--main-color);
   border-radius: 0 4px 4px 0;
-  cursor: pointer;
-  transition: 0.4s;
 }
 
 .hero-btn:hover {
@@ -261,4 +259,37 @@ body {
   font-size: 18px;
   font-weight: 600;
   margin: 24px 0 8px 0;
+}
+
+.we-work-section {
+  background-color: #f0ebfa;
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+
+.we-work-content {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.description-section {
+  color: #4e5a65;
+}
+
+.we-work-btn {
+  padding: 18px 21px;
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.we-work-btn:hover {
+  background-color: #592ae6;
+}
+
+.we-work-graph {
+  flex-basis: 50%;
 }
