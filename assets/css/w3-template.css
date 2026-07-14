@@ -57,18 +57,26 @@ img {
 }
 
 .hero-section {
-  background-color: #fff;
-  background-image: url("/assets/images/architect.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: clamp(700px, 100vh, 980px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  max-height: 100vh;
+  margin: 0 auto;
   color: #f1f1f1;
   font-size: 36px;
   letter-spacing: 4px;
+}
+
+.hero-img {
+  object-fit: cover;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .accent-hero {
@@ -79,7 +87,7 @@ img {
 }
 
 .projects-section {
-  margin: 32px 0;
+  margin: 32px auto;
 }
 
 .section-title {
@@ -165,11 +173,24 @@ img {
 }
 
 @media screen and (max-width: 600px) {
+  .hero-section {
+    background-size: contain;
+    background-position: top;
+  }
+
+  .hero-arc {
+    display: none;
+  }
+
   .projects-container {
     grid-template-columns: repeat(1, 1fr);
   }
 
   .engineers-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .header-nav {
+    display: none;
   }
 }
