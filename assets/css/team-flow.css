@@ -26,6 +26,12 @@ body {
   font-size: 14px;
 }
 
+.section {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 60px 165px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -50,7 +56,7 @@ body {
 .logo {
   letter-spacing: -6%;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 24px;
   color: #1d2830;
   flex-grow: 1;
 }
@@ -95,4 +101,89 @@ body {
 .register-btn:hover {
   color: #ece5ff;
   background-color: var(--main-color);
+}
+
+.hero-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.hero-content {
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero-sale {
+  flex-grow: 0;
+  background-color: #f2f9eb;
+  border-radius: 100px;
+  padding: 8px 16px 8px 0;
+}
+
+.hero-sale-accent {
+  background-color: #81c43b;
+  color: #fff;
+  border-radius: 100px;
+  padding: 8px 16px;
+}
+
+.hero-title {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.hero-description {
+  max-width: 500px;
+}
+
+.regist-block {
+  display: flex;
+}
+
+.user-email-inp {
+  padding: 18px 24px;
+  border: 1px solid #e1e5ea;
+  border-radius: 4px 0 0 4px;
+}
+
+.hero-btn {
+  padding: 18px 45px;
+  background-color: var(--main-color);
+  color: #fff;
+  border: 1px solid var(--main-color);
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.hero-btn:hover {
+  background-color: #592ae6;
+}
+
+.hero-img {
+  width: 100%;
+  box-shadow: 0px 0px 48px -8px rgba(29, 40, 48, 0.18);
+  margin-bottom: 76px;
+}
+
+.hero-links {
+  display: flex;
+  align-items: center;
+  gap: 132px;
+  margin-top: 5px;
 }
