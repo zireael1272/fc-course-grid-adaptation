@@ -108,14 +108,66 @@ img {
   padding: 8px 16px;
 }
 
+.about-description {
+  margin: 10px 0;
+}
+
+.engineers-container {
+  position: relative;
+  padding: 32px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.engineer-block > img {
+  filter: grayscale(75%);
+}
+
+.engineer-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.engineer-profession {
+  opacity: 0.6;
+  margin: 15px 0;
+}
+
+.engineer-description {
+  margin: 15px 0;
+}
+
+.contact-btn {
+  padding: 8px 16px;
+  width: 100%;
+  border: none;
+  background-color: #f1f1f1;
+  font-size: 17px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  background-color: #ccc;
+}
+
 @media screen and (max-width: 980px) {
   .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .engineers-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 600px) {
   .projects-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .engineers-container {
     grid-template-columns: repeat(1, 1fr);
   }
 }
