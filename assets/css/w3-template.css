@@ -14,6 +14,11 @@ img {
   padding: 8px 32px;
 }
 
+.segoi-family {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+}
+
 .header {
   width: 100%;
   box-sizing: border-box;
@@ -64,8 +69,6 @@ img {
   color: #f1f1f1;
   font-size: 36px;
   letter-spacing: 4px;
-  font-family: "Segoe UI", Arial, sans-serif;
-  font-weight: 400;
 }
 
 .accent-hero {
@@ -83,7 +86,6 @@ img {
   padding: 16px 0;
   font-size: 24px;
   border-bottom: 1px solid #f1f1f1;
-  font-family: "Segoe UI", Arial, sans-serif;
   margin: 10px 0;
 }
 
