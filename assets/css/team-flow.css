@@ -297,7 +297,9 @@ header::before {
 }
 
 .we-work-section {
-  background-color: #f0ebfa;
+  background-color: #fbfafe;
+  border-top: 1px solid #f0ebfa;
+  border-bottom: 1px solid #f0ebfa;
   display: flex;
   align-items: center;
   gap: 90px;
