@@ -240,19 +240,17 @@ header::before {
 
 .function-block {
   padding: 26px 32px 0 32px;
-  border-left: 8px solid transparent;
-  border-bottom: 1px solid transparent;
   border-radius: 0 8px 8px 0;
+  border-bottom: 1px solid #f0ebfa;
 }
 
-.function-block > :not(:first-child) {
-  border-bottom: 1px solid #f0ebfa;
+.function-block:last-child {
+  border-bottom: none;
 }
 
 .function-block:hover {
   background-color: #f6f3fc;
-  border-bottom: 1px solid #f6f3fc;
-  border-left: 8px solid var(--main-color);
+  box-shadow: inset 8px 0 0 var(--main-color);
 }
 
 .function-title {
@@ -355,6 +353,10 @@ header::before {
     gap: 32px;
   }
 
+  .function-section {
+    padding-bottom: 0;
+  }
+
   .functions-container {
     flex-direction: column;
   }
@@ -362,13 +364,13 @@ header::before {
   .function-block {
     padding: 18px 38px 0 38px;
     border-left: 0;
-    border-bottom: 8px solid transparent;
+    border-bottom: 1px solid #f0ebfa;
     border-radius: 8px 8px 0 0;
   }
 
   .function-block:hover {
     border-left: 0;
-    border-bottom: 8px solid var(--main-color);
+    box-shadow: inset 0 -8px 0 var(--main-color);
   }
 
   .we-work-section {
@@ -404,6 +406,7 @@ header::before {
 
   .hero-sale {
     padding: 4px 16px;
+    font-size: 13px;
   }
 
   .hero-sale-accent {
