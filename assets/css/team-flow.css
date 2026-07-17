@@ -42,6 +42,11 @@ body {
   transition: 0.3s;
 }
 
+.btn:hover {
+  color: #ece5ff;
+  background-color: var(--main-color);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -96,11 +101,6 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
-}
-
-.register-btn:hover {
-  color: #ece5ff;
-  background-color: var(--main-color);
 }
 
 .burger-container {
@@ -202,11 +202,11 @@ body {
   width: 100%;
 }
 
-.fuction-section {
+.function-section {
   background-color: #fbfafe;
 }
 
-.fuctions-container {
+.functions-container {
   display: flex;
   gap: 80px;
 }
@@ -217,30 +217,30 @@ body {
   flex-basis: 50%;
 }
 
-.fuctions-content {
+.functions-content {
   flex-basis: 50%;
   display: flex;
   flex-direction: column;
 }
 
-.fuction-block {
+.function-block {
   padding: 26px 32px 0 32px;
   border-left: 8px solid transparent;
   border-bottom: 1px solid transparent;
   border-radius: 0 8px 8px 0;
 }
 
-.fuction-block > :not(:first-child) {
+.function-block > :not(:first-child) {
   border-bottom: 1px solid #f0ebfa;
 }
 
-.fuction-block:hover {
+.function-block:hover {
   background-color: #f6f3fc;
   border-bottom: 1px solid #f6f3fc;
   border-left: 8px solid var(--main-color);
 }
 
-.fuction-title {
+.function-title {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -259,7 +259,7 @@ body {
 }
 
 .section-title {
-  font-size: 40px;
+  font-size: clamp(18px, 5vw, 40px);
   font-weight: 600;
   line-height: 1;
 }
@@ -275,6 +275,10 @@ body {
   font-size: 18px;
   font-weight: 600;
   margin: 24px 0 8px 0;
+}
+
+.task-btn {
+  display: none;
 }
 
 .we-work-section {
@@ -370,5 +374,34 @@ body {
 
   .regist-block * {
     border-radius: 4px;
+  }
+
+  .functions-container {
+    flex-direction: column;
+  }
+
+  .function-block {
+    padding: 18px 38px 0 38px;
+    border-left: 0;
+    border-bottom: 8px solid transparent;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .function-block:hover {
+    border-left: 0;
+    border-bottom: 8px solid var(--main-color);
+  }
+
+  .tasks-container {
+    max-width: 320px;
+  }
+
+  .task-block:nth-child(n + 4) {
+    display: none;
+  }
+
+  .task-btn {
+    display: block;
+    width: 100%;
   }
 }
