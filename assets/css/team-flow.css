@@ -368,6 +368,11 @@ header::before {
     border-radius: 8px 8px 0 0;
   }
 
+  .task-block > img {
+    width: 48px;
+    object-fit: cover;
+  }
+
   .function-block:hover {
     border-left: 0;
     box-shadow: inset 0 -8px 0 var(--main-color);
