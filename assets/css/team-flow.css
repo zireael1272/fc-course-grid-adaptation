@@ -25,6 +25,10 @@ body {
   color: #35414b;
 }
 
+header {
+  position: relative;
+}
+
 .section {
   max-width: 1500px;
   margin: 0 auto;
@@ -118,17 +122,13 @@ body {
 }
 
 .hero-section {
+  position: relative;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
-}
-
-.bg {
-  position: absolute;
-  top: 0;
-  z-index: -2;
+  overflow: hidden;
 }
 
 .hero-content {
@@ -204,6 +204,8 @@ body {
 
 .function-section {
   background-color: #fbfafe;
+  border-top: 1px solid #f0ebfa;
+  border-bottom: 1px solid #f0ebfa;
 }
 
 .functions-container {
@@ -312,9 +314,14 @@ body {
 
 .we-work-graph {
   flex-basis: 50%;
+  width: 100%;
 }
 
 @media screen and (max-width: 860px) {
+  body {
+    text-align: center;
+  }
+
   .section {
     padding: 60px 15px;
   }
@@ -332,13 +339,38 @@ body {
     font-size: 11px;
     gap: 32px;
   }
+
+  .functions-container {
+    flex-direction: column;
+  }
+
+  .function-block {
+    padding: 18px 38px 0 38px;
+    border-left: 0;
+    border-bottom: 8px solid transparent;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .function-block:hover {
+    border-left: 0;
+    border-bottom: 8px solid var(--main-color);
+  }
+
+  .we-work-section {
+    flex-direction: column-reverse;
+    gap: 32px;
+  }
+
+  .we-work-content {
+    align-items: center;
+  }
+
+  .we-work-btn {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
-  body {
-    text-align: center;
-  }
-
   .header {
     padding: 32px 15px;
   }
@@ -374,22 +406,6 @@ body {
 
   .regist-block * {
     border-radius: 4px;
-  }
-
-  .functions-container {
-    flex-direction: column;
-  }
-
-  .function-block {
-    padding: 18px 38px 0 38px;
-    border-left: 0;
-    border-bottom: 8px solid transparent;
-    border-radius: 8px 8px 0 0;
-  }
-
-  .function-block:hover {
-    border-left: 0;
-    border-bottom: 8px solid var(--main-color);
   }
 
   .tasks-container {
